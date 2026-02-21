@@ -1,9 +1,10 @@
 console.log("This is the Rock Paper Scissors Game");
 
 function getComputerChoice() {
-    if (Math.random() < 0.34) {
+    const rand = Math.random();
+    if (rand < 0.34) {
         return "rock";
-    } else if (Math.random() <= 0.67) {
+    } else if (rand <= 0.67) {
         return "paper";
     } else {
         return "scissors";
